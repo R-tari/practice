@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <title>슬라이더</title>
+
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider(
+              {
+                mode:'fade',
+                adaptiveHeight:true,
+                
+              }
+          );
+        });
+    </script>
+
+    <style>
+        h1
+        {
+            text-align:center;
+        }
+
+        img
+        {
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        슬라이더
+    </h1>
+    
+    <div class="slider">
+        <div>
+            <img src="./img-html.jpg" alt="html이미지">
+        </div>
+
+        <div>
+            <img src="./img-css.png" alt="CSS이미지">
+        </div>
+
+        <div>
+            <img src="./img-jsp.jpg" alt="javascript이미지">
+        </div>
+    </div>
+</body>
+</html>
