@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+
+    <style>
+
+        form
+        {
+            padding-left:200px;
+        }
+        fieldset
+        {
+            border:1px solid black;
+            width:600px;
+            height: 150px;
+        }
+
+        #field
+        {
+            border:1px solid black;
+            width:600px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="./ex23.html">
+        <h1>
+         회원 가입을 환영합니다.
+        </h1>
+    
+        <fieldset>
+            <legend>
+                사용자 정보
+            </legend>
+                    <ul>
+                        <li>
+                    <label >
+                        아이디                    
+                        <input type="text">
+                    </label>
+                        </li>
+                        <li>
+                            <label >
+                                이메일                    
+                                <input type="email">
+                            </label>
+                        </li>
+
+                        <li>
+                            <label >
+                                비밀번호                    
+                                <input type="password">
+                            </label>
+                        </li>
+
+                        <li>
+                            <label >
+                                비밀번호 확인                    
+                                <input type="password">
+                            </label>
+                        </li>
+            </ul>
+        </fieldset>
+        
+        <fieldset id="field">
+            <legend>
+                이벤트와 새로운 소식
+            </legend>
+            <label >
+            <input type="radio" name="mail"> 메일 수신
+            </label>
+            <label>
+            <input type="radio" name="mail"> 메일 수신 안 함
+            </label>
+            
+        </fieldset>
+        
+        <input type="submit" value="가입하기" >
+            <input type="reset" value=" 초기화">
+    </form>
+</body>
+</html>
