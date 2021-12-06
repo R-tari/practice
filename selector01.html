@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자(selector)</title>
+
+    <style>
+
+         /*클래스 선택자*/    
+         .box
+        {
+            color:blue;
+        }
+
+        /*아이디 선택자*/
+
+        #box
+        {
+            color:cyan;
+        }
+
+        
+
+        /*모든 선택자*/
+        *
+        {
+            color:red;
+        }   
+
+        /*다 무시하고 집어넣음 !important*/
+
+
+        /*태그선택자*/
+        div
+        {
+            color:green;
+        }
+       
+    
+        .box
+        {
+            color:red;
+        }
+    
+
+        li
+        {
+            color:yellow;
+        }
+
+        /*자손선택자*/
+
+        li li
+        {color:yellow;
+        }
+
+        ul ul li 
+        {
+            color:darkcyan;
+        }
+
+        #edit li
+        {
+            color:black;
+        }
+
+        .edit li 
+        {
+            color:white;
+        }
+
+        ul .edit li
+        {
+            color:darkgreen;
+        }
+
+        /*그룹선택자*/
+        h1,#box
+        {
+            font-size:30px;
+            color:black;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    
+    <h1>
+        선택자(selector)
+    </h1>
+
+    <h2>
+        모든(all) 선택자(*)
+    </h2>
+    <div id="box" class="box" style="color:magenta;">
+        box1
+    </div>
+    <div>
+        box2
+    </div>
+    <div class="box">
+        box3
+    </div>
+
+    
+
+    <nav>
+        <Ul>
+            <li class="first">
+                파일(F)
+                <ul>
+                    <li>
+                        새로만들기
+                    </li>
+                    <li>
+                        열기
+                    </li>
+                    <li>
+                        저장
+                    </li>
+                    <li>
+                        다른 이름으로 저장
+                    </li>
+                    <li>
+                        종료
+                    </li>
+                </ul>
+            </li>
+            <li id="edit" class="edit">
+                편집(E)
+                <ul>
+                    <li>
+                        복사
+                    </li>
+                    <li>
+                        잘라내기
+                    </li>
+                    <li>
+                        붙여넣기
+                    </li> 
+                    <li>da
+                        찾기
+                    </li>
+                </ul>
+            </li>
+            <li class="first">
+                선택 영역(S)
+                <ul>
+                    <li>
+                        선택반전
+                    </li>
+                    <li>
+                        선택해제
+                    </li>
+                </ul>
+            </li>
+            <li class="first">
+                보기(V)
+
+                <ul>
+                    <li>미리보기</li>
+                    <li>확대보기</li>
+                    <li>축소보기</li>
+                </ul>
+            </li>
+        </Ul>
+    </nav>
+</body>
+</html>
