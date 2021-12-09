@@ -9,8 +9,16 @@
 
     <style>
 
-        *
+        .clearfix::after
         {
+            content:'';
+            display:block;
+            clear:both;
+        }
+
+        *
+        {   
+            box-sizing: border-box;
             margin:0;
             padding:0;    
         }
@@ -35,7 +43,10 @@
 
         .container
         {
+            position: relative;
             width:960px;
+            height:80px;
+            
             margin:0 auto;
             padding:30px 0;
            
@@ -46,11 +57,11 @@
             border-bottom:1px solid #a73232;
             
         }
-
+/* 
         .main-logo,.nav,.nav li
         {
             display: inline-block;
-        }
+        } */
 
         .main-logo
         {
@@ -58,11 +69,31 @@
             margin-right:100px;
         }
 
+        .main-logo
+        {
+            position:absolute;
+            top:50%;
+            left:20px;
+            transform:translate(0%,-50%);
+
+        }
+        .nav
+        {
+            position:absolute;
+            top:50%;
+            right:20px;
+            transform:translate(0%,-50%);
+            
+            
+        }
+
         .nav li
         {
-            margin:0 10px;
+            display:inline-block;
+            margin-left:20px;
             font-weight: 600;
             font-size:15px;
+            list-style-type:none;
         }
         
         .nav a:hover
@@ -70,13 +101,17 @@
             color:rgb(167,50,50);
         }
 
+        .tmp
+        {
+            clear:both;
+        }
         
     </style>
 </head>
 <body>
     <section class="wrap">
         <header class="header" id="header">
-            <div class="container" id="container">
+            <div class="container clearfix" id="container">
                 <h1 class="main-logo">
                    로고 
                     <!-- <a href="#">
@@ -85,7 +120,7 @@
                     
                 </h1>
                 <nav class="nav">
-                    <ul>
+                    <ul class="clearfix">
                         <li><a href="#">더본코리아</a></li>
                         <li><a href="#">브랜드</a></li>
                         <li><a href="#">매장찾기</a></li>
@@ -95,7 +130,7 @@
                     </ul>
 
                 </nav>
-
+                <div class="tmp"></div>
             </div>
         </header>
 

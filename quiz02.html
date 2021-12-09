@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 레이아웃- 3단 레이아웃</title>
+</head>
+
+<style>
+    .clearfix::after
+    {
+        content:'';
+        display:block;
+        clear:both;
+    }
+
+    *
+    {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    .wrap
+    {
+        width:1000px;
+        margin:0 auto;
+
+    }
+
+    .header
+    {
+        height:100px;
+        background-color: #666;
+        padding:20px;
+        font-weight:700;
+        font-size:32px;
+        color:#fff;
+
+
+    }
+
+    .main>*
+    {
+        float:left;
+        padding:20px;
+        height:500px;
+    }
+    .main .aside
+    {
+        width:25%;
+        background:#888;
+        
+    }
+    .main .section
+    {
+        width:50%;
+        background:#777;
+    }
+   
+    .footer
+    {
+        padding:20px;
+        height:80px;
+        background:#666;
+
+    }
+
+
+</style>
+<body>
+    <section class="wrap">
+        <header class="header">
+            사이트 제목
+        </header>
+        <main class="main clearfix">
+            <aside class="aside">
+                사이드바1
+            </aside>
+            <section class="section">
+                본문
+            </section>
+            <aside class="aside">
+                사이드바2
+            </aside>
+            
+        </main>
+        <footer class="footer">
+            주소
+                
+        </footer>
+
+
+
+    </section>
+    
+</body>
+</html>
