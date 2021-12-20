@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex01</title>
+    <style>
+        *
+        {
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        
+        h1
+        {
+            text-align:center;
+        }
+        .par-box
+        {
+            width:1202px; 
+        
+            margin:0 auto;
+            border:1px solid #000;
+            /* display:flex; */
+            /* flex-direction:row; */
+            /* flex-direction:column-reverse; */
+            flex-wrap:nowrap;
+        }
+        .par-box
+        {
+            height:300px;
+            display:flex;
+            flex-flow:row wrap;
+        }
+        .child-box
+        {
+            display:block;
+            width:600px;
+            height:150px;
+        }
+        .child-box01
+        {
+            background-color:#f00;
+        }
+        .child-box02
+        {
+            background-color:#0f0;
+        }
+        .child-box03
+        {
+            background-color:#00f;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Flex Container
+    </h1>
+    <div class="par-box clearfix">
+        <div class="child-box child-box01"></div>
+        <div class="child-box child-box02"></div>
+        <div class="child-box child-box03"></div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis praesentium eius, placeat architecto voluptatibus dolor voluptate voluptas quod obcaecati odio, maxime ullam. Aspernatur asperiores nam ipsa reiciendis, qui excepturi fugiat!
+        Nobis nam, rerum labore laudantium possimus ab error, alias incidunt quas esse animi recusandae eius quidem suscipit corrupti aspernatur iste impedit magnam rem mollitia sit odio aliquid eum? Animi, impedit.
+        Eum excepturi, tempore natus deleniti provident laudantium facere quos libero maxime laborum quam, rem, debitis amet consequuntur corporis porro. Impedit dolorum vitae quasi incidunt modi quibusdam sint fuga vel error?
+        Porro atque totam quod perspiciatis neque dolore corporis sequi dicta, quae assumenda modi placeat repudiandae ea recusandae ad ut laboriosam numquam rem sed! Vitae at magnam provident nesciunt est ea!
+        Nam iure quidem voluptatem eum odit illum velit libero eaque provident numquam earum optio ea ipsa corporis unde possimus laboriosam, ab fuga. Error necessitatibus laudantium consectetur sequi porro, cum expedita?
+        Earum ducimus, architecto vitae necessitatibus voluptate cumque labore corrupti inventore, est debitis sequi? Dolor iure nihil magni facilis vero esse explicabo reiciendis a, consectetur, repellendus, numquam dicta voluptatum excepturi nemo.
+        Unde nam, tempore fugit non minus cum animi! Rem illum nostrum cumque, dicta, obcaecati quis doloribus ducimus reprehenderit, recusandae facilis a architecto totam esse consectetur sunt optio nisi laborum dolores.
+        Culpa, dolore. Architecto amet obcaecati deleniti et ratione, beatae deserunt numquam dolores, corporis maxime quaerat veritatis voluptatem iste eveniet aspernatur nisi repellendus necessitatibus delectus nam nemo eum dolore placeat autem.
+        Quisquam commodi ducimus odit! Itaque accusantium nihil ipsam nostrum velit blanditiis iusto, tenetur voluptatum? Ab distinctio dolor quidem vero alias placeat sit, optio illum molestiae provident, ducimus adipisci, natus similique?
+        Ratione voluptatem ex quo pariatur rerum magni soluta tempora dicta laudantium aspernatur tempore officiis molestias, impedit ea cum, ullam libero repudiandae atque eligendi aut ad error! Ipsa consequatur quibusdam vitae?
+    </p>
+</body>
+</html>

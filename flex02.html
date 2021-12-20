@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex02</title>
+</head>
+
+<style>
+    *
+    {
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+    }
+
+    .per-box
+    {
+        width:300px;
+        margin: 0 auto;
+        /* border:1px solid #000; */
+        /* display:-webkit-flex; */
+        display:flex;
+        /* -ms-flex-flow:column nowrap; */
+        flex-flow:column nowrap;
+    }
+
+    .child-box
+    {
+        width:200px;
+        height:200px;
+    }
+    .child-box01
+        {
+            background-color:#f00;
+        }
+        .child-box02
+        {
+            background-color:#0f0;
+        }
+        .child-box03
+        {
+            background-color:#00f;
+        }
+        .child-box04
+        {
+            background-color:#ff0;
+        }
+        .child-box05
+        {
+            background-color:#0ff;
+        }
+        @media(min-width:768px)
+        {
+            .per-box
+            {
+                width:400px;
+                flex-flow:row wrap;
+            }
+            .child-box
+            {
+                width:50%;
+            }
+            .child-box05
+            {
+                width:100%;
+            }
+        }
+        @media(min-width:1200px)
+        {
+            .per-box
+            {
+                width:1200px;
+                flex-wrap:nowrap;
+            }
+            .child-box
+            {
+                width:300px;
+            }
+        }
+</style>
+<body>
+    <h1>
+        Flex02
+    </h1>
+
+    <div class="per-box">
+        <div class="child-box child-box01"></div>
+        <div class="child-box child-box02"></div>
+        <div class="child-box child-box03"></div>
+        <div class="child-box child-box04"></div>
+        <div class="child-box child-box05"></div>
+    </div>
+    
+</body>
+</html>

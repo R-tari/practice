@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation03</title>
+    <style>
+        h1
+        {
+            color:#f00;
+            text-align:center;
+            filter:blur(5px);
+            animation:blur 1s forwards;
+        }
+
+        .box
+        {
+            position:fixed;
+            left:calc(50% - 150px);
+            top:calc(50% - 150px);
+            
+            width:300px;
+            height:300px;
+            background-color:#f00;
+        
+            
+        }
+
+        h1:hover + .box
+        {
+            animation:rotate-x-y 2s infinite , back-color 2s infinite;
+        }
+
+        @keyframes rotate-x-y
+        {
+           0%
+           {
+               transform:perspective(600px) rotatex(0deg) rotatey(0deg);
+           }
+           50%
+           {
+               transform:perspective(600px) rotatex(360deg) rotatey(0deg);
+           }
+           100%
+           {
+               transform:perspective(600px) rotatex(360deg) rotatey(360deg);
+           }
+        }
+
+        @keyframes back-color
+        {
+            form
+            {
+                background-color:#f00;
+            }
+            50%
+            {
+                background-color:#0f0;
+            }
+            to
+            {
+                background-color:#00f;
+            }
+        }
+
+        @keyframes blur
+        {
+            form
+            {
+                filter:blur(5px);
+            }
+
+            to
+            {
+                filter:blur(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        animation03
+    </h1>
+
+    <div class="box"></div>
+    </div>
+</body>
+</html>
