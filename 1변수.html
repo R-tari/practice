@@ -7,18 +7,26 @@
     <title>변수란?</title>
 </head>
 <body>
-    <h1>
-        javaScript 변수!
-    </h1>
-    
-    <script>
-        var h1=5;
-        function tmp()
-        {
-            var h1=4;
-            console.log('h1='+h1+',h1의 자료형+'+typeof h1);
-        }
-        console.log('h1='+h1+',h1의 자료형+'+typeof h1);
-    </script>
+
+    <h1>javaScript 변수!</h1>
+    <h2>전역변수</h2>
+    <p>스크립트 전체에 영향을 행사하는 변수</p>
+    <p>var선언된 변수는 중복 선언가능(단, 이전 변수값은 상실)</p>
+    <p>let선언된 변수는 중복 선언불가능</p>
+    <code>
+        중복선언 가능
+        var a=5;
+        var a=6;
+        중복선언 불가능(오류)
+        let a=5;
+        let a=6;
+    </code>
+    <h2>지역변수</h2>
+    <p>특정범위(스코트) 영향을 행사하는 변수</p>
+    <p>var선언된 변수는 중복 선언가능(단, 이전 변수값은 상실)</p>
+    <p>let선언된 변수는 중복 선언불가능</p>
+    <h2>전역변수,지역변수</h2>
+    <p>ver,let 중복 선언가능(전역변수의 값 상실되지 않음</p>
+
 </body>
 </html>
